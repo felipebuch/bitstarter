@@ -1,9 +1,9 @@
-B77;10103;0cvar express = require('express');
+var express = require('express');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World 2!');
+  response.send('Hello World!');
 });
 
 var port = process.env.PORT || 5000;
